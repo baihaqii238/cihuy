@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Undangan Pernikahan</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- google fonts sacramento, work sans & caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Sacramento&family=Work+Sans:wght@100;600;700&display=swap" rel="stylesheet">
+
+    <!-- countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- icon bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <section id="hero" class="hero d-flex align-items-center justify-content-center p-4 mx-auto text-center w-100 h-100">
+        <main>
+            <h4>Kepada bapak/ibu/saudara/i,</h4>
+            <h1>Umar & Wulan</h1>
+            <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+
+            <div class="simply-countdown">
+            </div>
+
+            <a href="#home" class="btn btn-lg mt-3" onclick="enableScroll()">Lihat Undangan</a>
+        </main>
+    </section>
+
+    <nav class="navbar navbar-expand bg-transparent sticky-top my-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Wuum</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#galeri">Galeri</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gift">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="fw-bold">Acara Pernikahan</h2>
+            <h3 class="fw-bold">Diselenggarakan pada 30 Desember 2023 di Bandung, Jawa Barat.</h3>
+            <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+          </div>
+
+          <div class="row couple">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-8 text-end">
+                  <h3>Umar Abdul Aziz</h3>
+                  <p>Berprofesi sebagai staf pengajar di suatu lembaga PonPes Tahfidz Yang berada di Kab.Bandung (Cilengkrang), Riwayat Pendidikan sebelumnya di PonPes Tahfidz yang berada di Ciamis (Kawali). dan Alhamdulillah sudah menyelesaikan Hafalannya sebanyak 30 juz secara di setorkan.</p>
+                  <p>Putra dari Bpk.wahyudi <br> dan <br> Ibu.saliani</p>
+                </div>
+                <div class="col-4">
+                  <img src="img/pengantin-lk.jpg" alt="Umar" class="img-responsive rounded-circle">
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/pengantin-pr.jpg" alt="Umar" class="img-responsive rounded-circle">
+                </div>
+                <div class="col-8">
+                  <h3>Wulan putri jamilah</h3>
+                  <p>Berprofesi sebagai staf pengajar di suatu lembaga PonPes Tahfidz Yang berada di Kab.Bandung (Cilengkrang), Riwayat Pendidikan sebelumnya di PonPes Tahfidz yang dimana sedang melakukan Kegiatan Belajar Mengajar di situ. Dan Alhamdulillah sudah membawa bekal yaitu Hafalan sebanyak 30 juz secara disetorkan.</p>
+                  <p>Putra dari Bpk.Suryadi <br> dan <br> Ibu.Jamilah</p>
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Alamat Acara</h2>
+            <p class="alamat">Alamat: Gedung Kologdam, Kodiklat TNI AD <br> Jl. Aceh, Merdeka, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40113</p>
+            <a href="https://maps.app.goo.gl/p8C6xs4L23F3reDQA" class="btn btn-light">Klik Disini Untuk Membuka Peta</a>
+            <p class="description">Diharapkan untuk tidak salah alamat dan jadwal, apabila anda tiba di lokasi dan tidak anda tanda-tanda digelarnya sebuah pernikahan maka kemungkinan besar anda salah alamat atau salah jadwal.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center mb-5">
+              <div class="card-header">
+                Akad Nikah
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-event d-block"></i>
+                    <span>Minggu, 30 Desember 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad nikah berlangsung diharapkan untuk menjaga kekhidmatan serta kekhusyuan selama prosesi.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center">
+              <div class="card-header">
+                Resepsi
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-event d-block"></i>
+                    <span>Minggu, 30 Desember 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad nikah berlangsung diharapkan untuk menjaga kekhidmatan serta kekhusyuan selama prosesi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>BAGAIMANA CINTA KAMI BERSEMI</span>
+            <h2>Cerita Kami</h2>
+            <p>Pertemuan dua insan yang telah ditakdirkan untuk bersama dan menjalani kehidupan dengan berbagai macam kisah, termasuk kisah cinta tentang bagaimana genre romansa bisa hadir dalam kisah kehdiupan kedua pasangan. </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="timeline">
+                <li>
+                  <div class="timeline-image" style="background-image: url(img/smp.jpg);">
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Awal Bertemu</h3>
+                      <span>20 juni 2015</span>
+                      <p>Awal kita bertemu yaitu pada saat menduduki kelas 1 smp, kita sama sekali tidak akrab dan seringkali bertengkar karena masalah sepele walaupun wulan sudah jatuh cinta pada pandangan pertama saat pertamakali bertemu.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted">
+                  <div class="timeline-image" style="background-image: url(img/a\ \(2\).jpeg);">
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Awal Dekat</h3>
+                      <span>26 september 2019</span>
+                      <p>Sebelumnya kedua pasangan ini sempat berpisah dikarenakan umar pindah sekolah saat smp, pertemuan mereka setelah berathun-tahun dan awal mula kedekatan mereka dimulai saat wulan mengirim chat ke umar di facebook dan dari situ mereka saling bertukar kontak whatsapp.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="timeline-image" style="background-image: url(img/a\ \(3\).jpeg);">
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Mulai Serius</h3>
+                      <span>12 agusuts 2020</span>
+                      <p>Hubungan mereka sudah dekat namun umar maupun wulan memutuskan merencanakan pernikahan dibandingkan harus berpacaran, umar dan wulan mulai banyak membicarakan hal-hal serius seperti dana suatu pernikahan, rumah dll. umar dan wulan juga saling membantu untuk menggapai mimpi masing-masing.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted">
+                  <div class="timeline-image" style="background-image: url(img/a\ \(1\).jpeg);">
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Tunangan</h3>
+                      <span>26 september 2023</span>
+                      <p>Saat umar telah menjadi Progammer dan wulan menjadi guru bahasa arab seperti yang pernah mereka impikan sebelumnya, umar yang sudah siap menafkahi karena sudah mempunyai pendapatan yang memumpuni dan wulan yang sudah siap menjadi ibu rumah tangga dan merasa dirinya sudah bisa membimbing buah hatinya nanti sebagai guru pertama memutuskan untuk melakukan pertunangan.</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri" class="galeri">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>Berikut adalah foto kedua mempelai yang sedang bersama orang-orang terdekatnya dan tidak ada foto mereka bersama dikarenakan mereka tidak pernah berfoto bersama sebelum memutuskan untuk menikah.</p>
+          </div>
+        </div>
+          <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm2 row-cols-1 justify-content-center">
+            <div class="col mt-3">
+              <a href="img/g1 (1).jpeg" data-toggle="lightbox" data-caption="This describes the image1" data-gallery="example-gallery">
+                <img src="img/g1 (1).jpeg" alt="fulan dan fulanah" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/g1 (2).jpeg" data-toggle="lightbox" data-caption="This describes the image2" data-gallery="example-gallery">
+                <img src="img/g1 (2).jpeg" alt="fulan dan fulanah" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/g1 (5).jpeg" data-toggle="lightbox" data-caption="This describes the image3" data-gallery="example-gallery">
+                <img src="img/g1 (5).jpeg" alt="fulan dan fulanah" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/g1 (4).jpeg" data-toggle="lightbox" data-caption="This describes the image4" data-gallery="example-gallery">
+                <img src="img/g1 (4).jpeg" alt="fulan dan fulanah" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/g6 (2).jpeg" data-toggle="lightbox" data-caption="This describes the image5" data-gallery="example-gallery">
+                <img src="img/g6 (2).jpeg" alt="fulan dan fulanah" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/g6.jpeg" data-toggle="lightbox" data-caption="This describes the image6" data-gallery="example-gallery">
+                <img src="img/g6.jpeg" alt="fulan dan fulanah" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/g6 (1).jpeg" data-toggle="lightbox" data-caption="This describes the image7" data-gallery="example-gallery">
+                <img src="img/g6 (1).jpeg" alt="fulan dan fulanah" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/g6 (3).jpeg" data-toggle="lightbox" data-caption="This describes the image8" data-gallery="example-gallery">
+                <img src="img/g6 (3).jpeg" alt="fulan dan fulanah" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form dibawah ini untuk mengkonfirmasi kehadiran</p>
+          </div>
+        </div>
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+        method="POST" 
+        action="https://script.google.com/macros/s/AKfycbwoiD0zD-arTCUJQm6415LFbJ5A8z82iL7MsYwQY4RijMlv3viP0efClzR4en7D4ngE/exec" id="my-form">
+<!-- apps script -->
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama Tamu Undangan</label>
+              <input type="text" class="form-control" id="nama" name="nama">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="1">Hadir</option>
+                <option value="2">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </div>
+
+          </form>
+      </div>
+    </section>
+
+    <section id="gift" class="gift">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan Tanda Kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Semoga pernikahan kami mejadikan sebuah pintu untuk meraih pahala lebih banyak serta semoga keluarga kami senantiasa mendapatkan keberkahan dan rezeki yang halal yang akhirnya sampai akhirpun kami menjadi keluarga yang sakinan mawaddah wa rahmah.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="fw-bold">BSI</div>
+              7232735966 - UMAR ABDUL AZIZ
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">BCA</div>
+              7232735966 - WULAN PUTRI JAMILAH
+            </li>
+
+            <li class="list-group-item">
+              <div class="fw-bold">BSI</div>
+              7232735966 - WULAN PUTRI JAMILAH
+            </li>
+
+          </ul>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2023 Baihaqi wedding. All Right Reserved. </small>
+            <small class="block">Design by <a href="https://www.instagram.com/baihaqi_ah">@Baihaqi_ah</a> </small>
+
+            <ul class="mt-3">
+            <li><a href="https://www.instagram.com/baihaqi_ah"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/baihaqi_ah"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/baihaqi_ah"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/baihaqi_ah"><i class="bi bi-twitter-x"></i></a></li>
+            <li><a href="https://www.instagram.com/baihaqi_ah"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>simplyCountdown('.simply-countdown', {
+            year: 2023, // required
+            month: 12, // required
+            day: 28, // required
+            hours: 0, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'Hari', plural: 'Hari' },
+                hours: { singular: 'Jam', plural: 'Jam' },
+                minutes: { singular: 'Menit', plural: 'Menit' },
+                seconds: { singular: 'Detik', plural: 'Detik' }
+            }
+    });
+    </script>
+      
+    <script>
+      const rootElement = document.querySelector(':root');
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+          window.onscroll = function () {
+            window.scrollTo(scrollLeft, scrollTop);
+          };
+ 
+          rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {}
+        rootElement.style.scrollBehavior ='smooth';
+        localStorage.setItem('opened', 'true');
+      }
+
+      if (!localStorage.getItem('opened')) {
+        disableScroll();
+      }
+
+    </script>
+
+    <script>
+      window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Konfirmasi kehadiran berhasil terkirim!");
+    })
+  });
+});
+
+    </script>
+
+  </body>
+</html>
